@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<queries>
+    <!--register new user detail-->
+    <newUser>
+        <query>
+            Insert into Users (username,password,lastlogin,isloggedin,FirstName,LastName,email,phoneno,loginCount) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        </query>
+    </newUser>
+    <!--login user detail-->
+    <loginUser>
+        <query>
+            Select username,email,password from Users
+        </query>
+    </loginUser>
+</queries>
